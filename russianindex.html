@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о Венгерском Ассоциации Рыбаков</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">меню</span>
+            <a href="#" class="logo">
+                <img src="logo.jpg" alt="логотип">
+                <h2>MHEI</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">закрыть</span>
+                <li><a href="horgaszat.html">Рыбалка</a></li>
+                <li><a href="helyszinek.html">Места</a></li>
+                <li><a href="esemenyek.html">События</a></li>
+                <li><a href="informaciok.html">Информация</a></li>
+                <li><a href="kapcsolat.html">Контакты</a></li>
+                <li class="language-dropdown">
+                    <a href="#" class="language-selector">
+                        <img src="rus.png" alt="russian flag">
+                    </a>
+                    <ul class="language-menu">
+                        <li><a href="englishindex.html" class="language-option"><img src="usa.png"
+                                    alt="Американский флаг"></a></li>
+                        <li><a href="germanindex.html" class="language-option"><img src="ger.png"
+                                    alt="Флаг Германии"></a></li>
+                        <li><a href="index.html" class="language-option"><img src="hun.png" alt="magyar"></a></li>
+                    </ul>
+                </li>
+                <button class="login-btn">Войти</button>
+            </ul>
+        </nav>
+    </header>
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">закрыть</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Добро пожаловать</h2>
+                <p>Пожалуйста, войдите в систему.</p>
+            </div>
+            <div class="form-content">
+                <h2>Войти</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Электронная почта</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Пароль</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Забыли пароль?</a>
+                    <button type="submit">Войти</button>
+                </form>
+                <div class="bottom-link">
+                    Нет аккаунта?
+                    <a href="#" id="signup-link">Зарегистрироваться</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Создание аккаунта</h2>
+                <p>Пожалуйста, создайте аккаунт, чтобы получить доступ к дополнительным функциям.</p>
+            </div>
+            <div class="form-content">
+                <h2>Зарегистрироваться</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Адрес электронной почты</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Пароль</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            Я принимаю
+                            <a href="#" class="option">условия использования</a>
+                        </label>
+                    </div>
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+                <div class="bottom-link">
+                    Уже есть аккаунт?
+                    <a href="#" id="login-link">Войти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

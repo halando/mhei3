@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="kapcsolat.css">
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Kapcsolat</h2>
+    <p>Vegye fel velünk a kapcsolatot:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="contact.jfif" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Vezetéknév</label>
+        <input type="text" id="fname" name="firstname" placeholder="Az ön vezetékneve...">
+        <label for="lname">Keresztnév</label>
+        <input type="text" id="lname" name="lastname" placeholder="Az ön keresztneve...">
+        <label for="country">Ország</label>
+        <select id="country" name="country">
+          <option value="australia">Magyarország</option>
+          <option value="canada">Németország</option>
+          <option value="usa">Szlovákia</option>
+        </select>
+        <label for="subject">Téma</label>
+        <textarea id="subject" name="subject" placeholder="Írjon valamit... :D" style="height:170px"></textarea>
+        <input type="submit" value="Küldés">
+      </form>
+    </div>
+  </div>
+</div>

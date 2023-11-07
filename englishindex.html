@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information for the Hungarian Anglers Association</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                <img src="logo.jpg" alt="logo">
+                <h2>MHEI</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="fishing.html">Fishing</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="language-dropdown">
+                    <a href="#" class="language-selector">
+                        <img src="usa.png" alt="American Flag">
+                    </a>
+                    <ul class="language-menu">
+                        <li><a href="germanindex.html" class="language-option"><img src="ger.png" alt="German Flag"></a>
+                        </li>
+                        <li><a href="russianindex.html" class="language-option"><img src="rus.png"
+                                    alt="Russian Flag"></a></li>
+                        <li><a href="index.html" class="language-option"><img src="hun.png" alt="Hungarian Flag"></a>
+                        </li>
+                    </ul>
+                </li>
+                <button class="login-btn">Log In</button>
+            </ul>
+        </nav>
+    </header>
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome</h2>
+                <p>Please log in.</p>
+            </div>
+            <div class="form-content">
+                <h2>Log In</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot your password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account yet?
+                    <a href="#" id="signup-link">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create an Account</h2>
+                <p>Please create an account to access more features.</p>
+            </div>
+            <div class "form-content">
+                <h2>Sign Up</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email Address</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I accept the
+                            <a href="#" class="option">terms and conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account?
+                    <a href="#" id="login-link">Log In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
