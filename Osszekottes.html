@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP és JavaScript összekapcsolása</title>
+</head>
+<body>
+
+<h1>Kattints a gombra!</h1>
+
+<button id="getDataBtn">Adatok betöltése</button>
+
+<div id="responseData"></div>
+
+<script>
+document.getElementById("getDataBtn").addEventListener("click", function() {
+    // AJAX kérés küldése a PHP fájlnak
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "get_data.php", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            // A válasz megjelenítése a felhasználónak
+            document.getElementById("responseData").innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+});
+</script>
+
+</body>
+</html>
